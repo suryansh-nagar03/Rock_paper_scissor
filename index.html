@@ -6,10 +6,56 @@
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="script.js"></script>
-    <h1>Rock Paper Scissors</h1>
-    <p>The game is to be played in the console</p>
+<body>  
+    <!-- Header -->
+    <div class="header">
+        <div class="title">ROCK PAPER SCISSORS</div></h1>
+        <div class="header-text">First player to     5 points wins!</div>
+    </div>
 
+    <div class="game-zone">
+        <!-- Score area -->
+        <div class="scores">
+            <div class="left-score">
+                <div class="player-score">0</div>
+                <div class="player-text">You</div>
+            </div>
+            <div class="right-score">
+                <div class="computer-score">0</div>
+                <div class="computer-text">Comp</div>
+            </div>
+        </div>
+
+        <!-- Symbol area -->
+        <div class="symbols">
+            <div class="rock">
+                <div id="rock-icon">👊🏻</div>
+                <p class="rock-text">Rock</p>
+            </div>
+            <div class="paper">
+                <div id="paper-icon">🖐🏻</div>
+                <p class="paper-text">Paper</p>
+            </div>
+            <div class="scissors">
+                <div id="scissors-icon">✌🏻</div>
+                <p class="scissors-text">Scissors</p>
+            </div>
+        </div>
+
+        <div class="result"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            © Suryansh Nagar <span id="current-year"></span>
+            <script>
+                document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+             
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html> 
