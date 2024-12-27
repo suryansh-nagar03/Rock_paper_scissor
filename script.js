@@ -45,8 +45,8 @@ function reset(){
     computerScore.textContent = 0;
 }
 
-function draw(){
-    result.textContent = `It's a tie!! ${player} and ${comp} are same`;
+function draw(comp,player){
+    result.textContent = `It's a draw!! ${player} and ${comp} are equal`;
 }
 
 function play(playerSelect){
@@ -57,7 +57,7 @@ function play(playerSelect){
         win(compSelect,playerSelect);
     }
     else if(compSelect===playerSelect){
-        draw();
+        draw(compSelect,playerSelect);
     }
     else{
         lose(compSelect,playerSelect);
